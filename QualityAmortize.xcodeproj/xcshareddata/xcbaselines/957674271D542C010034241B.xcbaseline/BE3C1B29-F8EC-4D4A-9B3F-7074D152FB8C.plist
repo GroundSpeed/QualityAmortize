@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>classNames</key>
+	<dict>
+		<key>GenericTests</key>
+		<dict>
+			<key>testDateFormatterPerformance()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict/>
+			</dict>
+		</dict>
+		<key>ParsePeformanceTests</key>
+		<dict>
+			<key>testParsePerformanceGettingProducts()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict/>
+			</dict>
+			<key>testParsePerformanceOnMainThread()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict/>
+			</dict>
+		</dict>
+		<key>QualityAmortizeTests</key>
+		<dict>
+			<key>testPerformanceZillowConnection()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict/>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
