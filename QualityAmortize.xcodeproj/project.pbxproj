@@ -24,6 +24,10 @@
 		9576744E1D542E140034241B /* Parse.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9576744A1D542E140034241B /* Parse.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		957674511D542E690034241B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957674501D542E690034241B /* SystemConfiguration.framework */; };
 		957674531D542E860034241B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 957674521D542E860034241B /* libsqlite3.tbd */; };
+		957674571D5434C50034241B /* GenericTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957674551D5434C50034241B /* GenericTests.swift */; };
+		957674581D5434C50034241B /* ParsePeformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957674561D5434C50034241B /* ParsePeformanceTests.swift */; };
+		957674591D5435A90034241B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957674491D542E140034241B /* Bolts.framework */; };
+		9576745A1D5435A90034241B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9576744A1D542E140034241B /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,8 @@
 		9576744A1D542E140034241B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		957674501D542E690034241B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		957674521D542E860034241B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		957674551D5434C50034241B /* GenericTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTests.swift; sourceTree = "<group>"; };
+		957674561D5434C50034241B /* ParsePeformanceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsePeformanceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9576745A1D5435A90034241B /* Parse.framework in Frameworks */,
+				957674591D5435A90034241B /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +138,8 @@
 		9576742B1D542C010034241B /* QualityAmortizeTests */ = {
 			isa = PBXGroup;
 			children = (
+				957674551D5434C50034241B /* GenericTests.swift */,
+				957674561D5434C50034241B /* ParsePeformanceTests.swift */,
 				9576742C1D542C010034241B /* QualityAmortizeTests.swift */,
 				9576742E1D542C010034241B /* Info.plist */,
 			);
@@ -300,7 +310,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				957674581D5434C50034241B /* ParsePeformanceTests.swift in Sources */,
 				9576742D1D542C010034241B /* QualityAmortizeTests.swift in Sources */,
+				957674571D5434C50034241B /* GenericTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +455,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = QualityAmortizeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.groundspeedhq.QualityAmortizeTests;
@@ -455,6 +471,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = QualityAmortizeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.groundspeedhq.QualityAmortizeTests;
