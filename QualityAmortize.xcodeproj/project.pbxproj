@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		953A874B1D54DE5000AA2550 /* ProductsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953A874A1D54DE5000AA2550 /* ProductsTests.swift */; };
 		957674181D542C010034241B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957674171D542C010034241B /* AppDelegate.swift */; };
 		9576741F1D542C010034241B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9576741E1D542C010034241B /* Assets.xcassets */; };
 		957674221D542C010034241B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 957674201D542C010034241B /* LaunchScreen.storyboard */; };
@@ -56,6 +57,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		953A874A1D54DE5000AA2550 /* ProductsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTests.swift; sourceTree = "<group>"; };
 		957674141D542C010034241B /* QualityAmortize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QualityAmortize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		957674171D542C010034241B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9576741E1D542C010034241B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				957674561D5434C50034241B /* ParsePeformanceTests.swift */,
 				9576742C1D542C010034241B /* QualityAmortizeTests.swift */,
 				9576742E1D542C010034241B /* Info.plist */,
+				953A874A1D54DE5000AA2550 /* ProductsTests.swift */,
 			);
 			path = QualityAmortizeTests;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				957674581D5434C50034241B /* ParsePeformanceTests.swift in Sources */,
+				953A874B1D54DE5000AA2550 /* ProductsTests.swift in Sources */,
 				9576742D1D542C010034241B /* QualityAmortizeTests.swift in Sources */,
 				957674571D5434C50034241B /* GenericTests.swift in Sources */,
 			);
@@ -502,6 +506,7 @@
 				957674331D542C010034241B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		957674341D542C010034241B /* Build configuration list for PBXNativeTarget "QualityAmortizeTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +515,7 @@
 				957674361D542C010034241B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

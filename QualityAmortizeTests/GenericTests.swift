@@ -24,16 +24,16 @@ class GenericTests: XCTestCase {
         XCTAssertEqual(1 + 1, 2, "one plus one should equal two")
     }
     
-    func testDateFormatterPerformance() {
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateStyle = .LongStyle
-        dateFormatter.timeStyle = .ShortStyle
-        
-        let date = NSDate()
-        
-        measureBlock() {
-            let string = dateFormatter.stringFromDate(date)
-        }
-    }
+//    func testDateFormatterPerformance() {
+//        let dateFormatter = NSDateFormatter()
+//        dateFormatter.dateStyle = .LongStyle
+//        dateFormatter.timeStyle = .ShortStyle
+//        
+//        let date = NSDate()
+//        
+//        measureBlock() {
+//            let string = dateFormatter.stringFromDate(date)
+//        }
+//    }
     
 }

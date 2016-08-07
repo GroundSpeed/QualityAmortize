@@ -22,7 +22,7 @@ class ParsePeformanceTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
+
     func testParsePerformanceOnMainThread() {
         // This is an example of a performance test case.
         self.measureBlock {
@@ -40,29 +40,9 @@ class ParsePeformanceTests: XCTestCase {
         catch let e as NSError { print("Parse save error: \(e)") }
     }
     
-
-    func testParsePerformanceGettingProducts() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            self.checkParsePullingData()
-        }
-    }
-    
-    func checkParsePullingData() {
-        let query = PFQuery(className:"Products")
-        
-        do { let objects = try query.findObjects()
-            for object in objects {
-                print(object.objectId)
-            }
-        }
-        catch let e as NSError { print("Parse load error: \(e)") }
-    }
-    
     func testGettingRatesCollection() {
         let arrayProducts : Array<Products> = Products().getAllProductsFromParse()
         
         XCTAssert(arrayProducts.count > 0, "\(arrayProducts.count) should be greater than zero")
     }
- 
 }
